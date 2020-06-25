@@ -1,11 +1,14 @@
 const express = require('express')
 const routes = express.Router()
 
-const ScrapPromobitController = require('./controllers/ScrapPromobitController')
 const BooksToScrapeController = require('./controllers/BooksToScrapeController')
+const ScrapeOlxController = require('./controllers/ScrapeOlxController')
+const ScrapeCarrefourController = require('./controllers/ScrapeCarrefourController')
+const ScrapePromobitController = require('./controllers/ScrapePromobitController')
 
-// UTILIZADO PARA FAZER O LOGIN DA APLICAÇÃO
-routes.post('/promobit', ScrapPromobitController.index)
 routes.post('/books', BooksToScrapeController.index)
+routes.post('/carrefour', ScrapeCarrefourController.index)
+routes.post('/olx', ScrapeOlxController.index)
+routes.post('/promobit', ScrapePromobitController.index)
 
 module.exports = routes
