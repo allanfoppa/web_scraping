@@ -1,0 +1,6 @@
+.c-logout{
+    justify-self: flex-end;
+    height: 50px;
+    padding: 16px;
+    cursor: pointer;
+}

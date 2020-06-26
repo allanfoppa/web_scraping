@@ -1,0 +1,88 @@
+@font-face {
+	font-family: 'Ubuntu-Regular';
+	src: url('./fonts/ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Ubuntu-Bold';
+	src: url('./fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Ubuntu-Regular', sans-serif;
+}
+
+.img-responsive {
+	display: flex;
+	height: auto;
+	max-width: 100%;
+}
+
+.padding--top-52 {
+    padding-top: 52px;
+}
+
+.padding--bottom-52 {
+    padding-bottom: 52px;
+}
+
+.margin--bottom-16 {
+    margin-bottom: 16px;
+}
+
+.width--100 {
+    width: 100%;
+}
+
+.display--grid {
+	display: grid;
+}
+
+.display--flex {
+	display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.data-box {
+	display: grid;
+    grid-template-rows: 80px 1fr;
+    justify-items: center;
+    padding: 62px;
+    margin: 42px;
+}
+
+.data-box-inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	text-align: center;
+	margin-top: 16px;
+}
+
+.data-box-text {
+	margin-bottom: 32px;
+	font-size: 16px;
+}
+
+.data-box-number {
+	font-size: 32px;
+	color: #1e6140;
+}
