@@ -2,9 +2,6 @@
 node_modules
 /dist
 
-# Lojas que não vou enviar para o Git
-/src/controllers/ScrapeECommerceController.js
-
 # local env files
 .env.local
 .env.*.local

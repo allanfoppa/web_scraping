@@ -26,6 +26,8 @@ module.exports = {
                 results = results.concat(await extractedEvaluateCall(page))
 
                 if (index != pagesScrapeQtd - 1) {
+                    console.log('pageToGo' + ' ' + pageToGo)
+                    console.log('validação' + index != pagesScrapeQtd - 1)
                     // Starts in 2
                     await page.click(`#content > div > div.col2.sc-15vff5z-5.fFdJjk > div:nth-child(12) > ul > li:nth-child(${pageToGo})`)
                     pageToGo++
